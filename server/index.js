@@ -9,7 +9,7 @@ const PORT = 5050;
 // 🔐 CORS 설정
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://it-news-tech.vercel.app",
     methods: ["GET"],
   })
 );
