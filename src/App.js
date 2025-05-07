@@ -54,7 +54,7 @@ function App() {
   };
 
   useEffect(() => {
-    fetch(`/api/news?category=${category}`)
+    fetch(`${process.env.REACT_APP_API_URL}/api/news?category=${category}`)
       .then((res) => res.json())
       .then((data) => {
         const list = data.results || data.articles || [];
