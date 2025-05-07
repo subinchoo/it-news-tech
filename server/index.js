@@ -33,7 +33,7 @@ app.get("/api/news", async (req, res) => {
     return res.status(200).json({ results: cache.data });
   }
 
-  const apiKey = process.env.NEWSDATA_API_KEY;
+  const apiKey = process.env.REACT_APP_NEWSDATA_API_KEY;
   const baseURL = "https://newsdata.io/api/1/news";
 
   const results = [];
